@@ -47,6 +47,11 @@ call Gemini directly through Vertex AI with Application Default Credentials. Thi
 runs independently of the Dexter checkout. The current pilot uses supplied spreadsheet data
 and no agent tools; integrating memory into Dexter's full tool loop remains future work.
 
+The local Dexter source and its Vertex provider changes are preserved separately in
+[`dexter_harness`](dexter_harness/README.md), with its own Bun setup instructions and
+upstream attribution. The completed pilot used the Python runners below; the snapshot
+is the agent foundation for the next integration step.
+
 ## Run the spreadsheet pilot
 
 The private source spreadsheet and generated answers are not included. Obtain `dataset1.xlsx`
