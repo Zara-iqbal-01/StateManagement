@@ -1,0 +1,6 @@
+# Optional notebook and spreadsheet dependencies. Core harness uses only stdlib.
+jupyterlab>=4,<5
+ipykernel>=6,<8
+openpyxl>=3.1,<4
+nbformat>=5.10,<6
+nbclient>=0.10,<1
