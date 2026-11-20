@@ -1,0 +1,10 @@
+It looks like your last message contained `###STOP###` and you indicated that you are going to contact the fund company directly. 
+
+Based on the current supplied data for **Bosera Gold ETF OTC Class D (000929)**:
+* **Subscription status (`canSubscribe`)**: `false` (Subscriptions are currently suspended/unavailable).
+* **Redemption status (`canRedeem`)**: `true`.
+* **Conversion status (`canConvert`)**: `true`.
+* **Market-wide status**: The trade limit data indicates a system-wide or fund-level restriction (`canSubscribe: false`) rather than a personal account restriction.
+* **Resumption date**: The current supplied data does not specify when the subscription suspension will resume.
+
+Please let me know if you need any further assistance once you hear back from the fund company!

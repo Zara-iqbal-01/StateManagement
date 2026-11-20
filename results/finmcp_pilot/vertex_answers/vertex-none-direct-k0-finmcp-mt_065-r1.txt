@@ -1,0 +1,8 @@
+Based on the supplied data, here is the asset analysis report for Noah Brown based on the specified funds (`100032` with an amount of 50,000 and `162411` with an amount of 30,000):
+
+* **Chinese Stocks**: Ratio of 0.625 (Category Code: `3001010301`)
+* **Overseas Stocks**: Ratio of 0.375 (Category Code: `3001010302`)
+
+Chart URL: [View Echart](https://jianda-cmsstatic.oss-cn-shenzhen.aliyuncs.com/assets/charts/20258/1755594694413_82rc4v5qlbs.png)
+
+*Note: The supplied data provides the asset classes detail (primary/secondary categories), but does not contain separate breakdowns for major asset classes beyond the provided categories.*

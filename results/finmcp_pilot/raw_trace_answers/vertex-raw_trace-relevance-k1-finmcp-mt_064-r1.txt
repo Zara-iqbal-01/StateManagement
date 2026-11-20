@@ -1,0 +1,6 @@
+Based on the current supplied data, here are the explanations for the metrics you asked about:
+
+* **Annualized Return (13.32% / precisely 13.31607433%):** This represents the geometric average amount of money earned by an investment each year over the backtest period (from August 17, 2020, to August 18, 2025, using a rolling window of Y5), assuming the returns were compounded. 
+* **Max Drawdown (-15.50% / precisely -15.50378527%):** This measures the maximum observed loss from a peak to a trough of a portfolio before a new peak is attained, indicating the downside risk over a given time period. For this portfolio, the max drawdown range occurred from April 19, 2024, to April 8, 2025.
+
+Please note that the current supplied data does not contain details regarding your specific cash inflow and outflow records, nor does it list the cumulative returns as of May 2024 (the `cumulativeReturns` field is currently empty in the backtest detail).

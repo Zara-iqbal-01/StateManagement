@@ -1,0 +1,23 @@
+Based on the current supplied data, here are the answers regarding your requested adjustments, expected returns, historical performance, and management risks:
+
+### 1. Adjusted Allocation & Expected Returns
+Based on the current asset allocation plan (`AAP000117`), the base parameters and historical back-test metrics are as follows:
+* **Expected Annualized Return Rate:** Approximately **6.00%** (with an expected drawdown of 8.00% based on the model's suitability parameters). 
+* **Historical Back-Test Performance (5-Year Rolling Window from 2020-08-17 to 2025-08-18):**
+  * **Annualized Return:** **6.04%** (`0.0604214053`)
+  * **Maximum Drawdown:** **-10.64%** (`-0.1063799766`), which occurred between 2021-07-22 and 2022-04-26.
+  * **Volatility:** **7.10%** (`0.071`)
+  * **Sharpe Ratio:** **0.46** (`0.4625`)
+
+*(Note: While you mentioned adjusting the gold proportion to about 10% and reducing Chinese stocks to about 15% to further ease your concerns about market fluctuations, the current model data retrieved reflects the baseline asset plan `AAP000117`, which features 20% Chinese Stocks, 58% Chinese Bonds, 20% Overseas Stocks, and 2% Alternative Commodities. Any custom re-weighting beyond the fetched model would require a recalculation of the specific portfolio mix.)*
+
+### 2. Historical Performance of Fund Products
+The composite model includes diversified underlying funds across asset classes. For example:
+* **Chinese Bonds (approx. 46.1% of the model portfolio):** Invests in steady fixed-income products such as *E Fund New Composite Bond A* (161119), *GF Pure Bond Bond A* (270048), and *HFT Steady-Gain Bond A* (003949).
+* **Alternative Commodities (Gold):** Includes *China Asset Management Gold Easy ETF Feeder A* (000216), which currently accounts for 5.82% in the model detail.
+* **Stocks (Chinese & Overseas):** Spread across index feeders (like *E Fund CSI 300 ETF Feeder C* [007339]) and active/QDII funds to balance growth and geographic diversification.
+
+### 3. Potential Management & Market Risks to Note
+* **Market Fluctuation & Drawdown Risk:** As seen in the historical back-test, even a steady multi-asset allocation can experience drawdowns during broader market corrections (such as the historical max drawdown of -10.64% during 2021–2022). 
+* **Underlying Fund/Index Proxy Variances:** Certain fund back-tests incorporate representative index market data for specific historical periods where direct fund history was modeled against benchmarks (e.g., using indices like `885066`, `885065`, or `H11021`), which introduces tracking and estimation differences.
+* **Asset Class Shifts:** Altering weights manually (such as increasing gold to 10% or lowering stocks to 15%) will shift the risk-return profile, potentially lowering overall volatility and expected return.

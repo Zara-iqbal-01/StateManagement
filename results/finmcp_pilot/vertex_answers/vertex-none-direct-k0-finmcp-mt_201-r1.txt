@@ -1,0 +1,7 @@
+Based on the supplied data, the specific step-by-step buying process is not included in the provided tool results. Therefore, I cannot provide a detailed step-by-step guide on how to buy these products at this moment. 
+
+However, looking at the available fund details (such as for *E Fund New Composite Bond A*, fund code `161119`), fund trading generally operates around a 15:00 trading-day cutoff rule:
+- Transactions completed before 15:00 on a trading day are processed as that day's transaction.
+- Transactions at or after 15:00 (or on weekends and statutory holidays) fall into the next trading day.
+
+If you need specific platform-level purchase steps, please let me know or consult the specific fund distribution platform you are using!

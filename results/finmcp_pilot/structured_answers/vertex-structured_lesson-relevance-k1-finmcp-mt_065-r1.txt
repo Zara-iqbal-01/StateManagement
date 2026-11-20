@@ -1,0 +1,9 @@
+Based on your asset allocation data, here is the complete analysis report of your assets, including the distribution across major asset classes:
+
+- **Chinese Stocks**: 62.5% (Category Code: `3001010301`, Amount: 50,000 for fund `100032`)
+- **Overseas Stocks**: 37.5% (Category Code: `3001010302`, Amount: 30,000 for fund `162411`)
+
+You can also view the visual chart representation of your asset distribution here:
+[Echart URL](https://jianda-cmsstatic.oss-cn-shenzhen.aliyuncs.com/assets/charts/20258/1755594694413_82rc4v5qlbs.png)
+
+*(Note: The current supplied data focuses on major asset classes and specific fund holdings; please let me know if you need further breakdown into additional primary or secondary categories.)*

@@ -1,0 +1,13 @@
+Based on the asset allocation plan and backtest data, here are the answers to your questions regarding the adjusted allocation (increasing gold to about 10% and reducing Chinese stocks to about 15%):
+
+1. **Expected Annualized Return Rate**: 
+   - Based on the current plan design parameters, the expected annualized return rate is **6.00%** (with an expected drawdown of 8.00%). 
+   - According to the historical backtest data for the underlying fund products over the 5-year rolling window (from 2020-08-17 to 2025-08-18), the historical annualized return rate is approximately **6.04%**, with a maximum drawdown of **-10.64%** and a volatility of **7.10%** (Sharpe ratio is 0.4625).
+
+2. **Historical Performance of the Fund Products**:
+   - The historical performance over the past 5 years shows a steady annualized return of around 6.04% under the tested mix of bond, stock, alternative commodity, and overseas asset funds. 
+   - Note that certain individual funds within the portfolio use representative index market data for portions of their time ranges during backtesting due to their inception dates (as detailed in the backtest remarks).
+
+3. **Potential Management Risks to Note**:
+   - **Market Risk / Fluctuation Risk**: Although the portfolio leans toward a steady style (with a large portion in bonds and added gold for stability), it still holds equity and alternative assets that are subject to market volatility and economic fluctuations. The historical maximum drawdown reached -10.64% during the 2021–2022 range.
+   - **Asset Concentration & Tracking Risk**: Adjusting weights (such as increasing gold via alternative commodity funds like China Asset Management Gold Easy ETF Feeder A or reducing specific stock ratios) means performance will depend on the specific underlying funds' ability to track their respective benchmarks or manage their assets effectively.

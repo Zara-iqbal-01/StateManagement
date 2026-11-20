@@ -1,0 +1,11 @@
+Based on the adjusted allocation you requested (reducing the stock proportion to about 15% and increasing the gold/alternative commodities proportion to around 10%), here are the figures and performance details from the backtest data:
+
+* **Expected Annualized Return Rate:** Approximately **6.04%** (specifically $0.0604$, matching the backtested annualized return of $6.0421\%$).
+* **Historical Performance (Backtest Data from 2020-08-17 to 2025-08-18):**
+  * **Annualized Return:** $6.04\%$
+  * **Max Drawdown:** $-10.64\%$ (occurring between 2021-07-22 and 2022-04-26)
+  * **Volatility:** $7.10\%$ ($0.071$)
+  * **Sharpe Ratio:** $0.4625$
+* **Potential Management Risks to Note:** 
+  * The backtest results incorporate historical market data and representative index data for certain fund periods (noted in the remarks where specific funds rely on proxy index data during periods before their inception or specific dates), so historical performance does not guarantee future results.
+  * Market fluctuations can still cause drawdowns (historical max drawdown reached about $10.64\%$), and adjustments in asset classes carry inherent market, credit, and commodity price risks.

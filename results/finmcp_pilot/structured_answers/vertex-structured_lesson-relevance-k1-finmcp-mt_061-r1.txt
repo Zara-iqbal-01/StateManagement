@@ -1,0 +1,27 @@
+To set up a regular investment plan (SIP) on Yingmi Fund for your chosen funds, you can follow these general steps and points to note:
+
+### **Process for Setting Up Regular Investments on Yingmi Fund:**
+1. **Download and Register/Log In:**
+   - Download the official Yingmi Fund app or access their platform, register with your mobile number, and complete the real-name authentication and identity verification.
+2. **Link a Bank Card:**
+   - Link a secure personal bank card (usually a major debit card) to your account for funding the regular investments.
+3. **Search for the Target Funds:**
+   - Use the search bar in the app to find your specific selected fund codes/names, such as:
+     - **Overseas USD Bond Funds:** "Fullgoal Global Bond (QDII) RMB C" (019518) and "Bosera Asia Coupon Income Bond C" (019480).
+     - **Domestic Bond Funds:** e.g., "E Fund Pure Bond A" (110037) or "Bosera Credit Pure Bond A" (050027).
+4. **Set Up the Regular Investment Plan (SIP):**
+   - On the individual fund's detail page, click on **"Regular Invest" (定投)** or "Regular Purchase".
+   - Enter your planned investment amount (e.g., 500 yuan per month for the overseas part, split between Fullgoal and Bosera, and 500 yuan per month for the domestic bond part).
+   - Select the deduction frequency (e.g., monthly) and choose the specific deduction date.
+   - Select your linked bank card as the payment source and confirm the setup with your trading password.
+
+---
+
+### **Important Points to Note:**
+1. **Ensure Sufficient Funds:** Make sure your linked bank card has a sufficient balance before each scheduled deduction date to avoid failed transactions.
+2. **Understand Redemption and Holding Periods:** 
+   - Pay attention to short-term redemption fees. For instance, many bond funds or QDII bond funds charge higher redemption fees if redeemed within a very short timeframe (e.g., within 7 days or 30 days). Since you are adopting a long-term retirement strategy (10+ years), staying invested for the long haul helps avoid these penalties.
+3. **Review Fees:** Keep in mind the management, custodian, and any applicable sales service fees (such as C-share fee structures) associated with the funds you choose.
+4. **Regular Monitoring:** Even with a "set-it-and-forget-it" regular investment plan, it is a good idea to periodically review your portfolio balance to ensure it still aligns with your conservative risk tolerance.
+
+If you run into any specific interface or operational questions while setting up your account tonight, feel free to ask!

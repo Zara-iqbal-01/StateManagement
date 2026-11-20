@@ -1,0 +1,13 @@
+Based on the current supplied data for your "Steady Happiness" investment product (fund code: 005813) for a redemption application submitted on September 27th, here are the expected trade time flows:
+
+* **If redeeming to Yingmi Bao:**
+  * **Sell Fund:** Before 15:00 on 09-29
+  * **Confirm Amount:** 09-30 (Tuesday)
+  * **Arrive at Yingmi Bao:** 10-14 (Tuesday)
+
+* **If redeeming to Bank Card:**
+  * **Sell Fund:** Before 15:00 on 09-29
+  * **Confirm Amount:** 09-30 (Tuesday)
+  * **Arrive at Bank Card:** 10-16 (Thursday)
+
+Regarding the balance of about 30,000 yuan that you mentioned has not arrived yet, the current supplied data provides the standard trade rules and expected arrival schedules above, but does not contain specific real-time account ledger states or individual transaction execution statuses to confirm why a partial balance remains. Please note that the actual arrival time is subject to the results issued by each fund company.

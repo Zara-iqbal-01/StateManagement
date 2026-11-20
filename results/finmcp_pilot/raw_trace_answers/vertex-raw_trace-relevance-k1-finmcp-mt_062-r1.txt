@@ -1,0 +1,22 @@
+Based on the current supplied data for asset plan `AAP000117`, here are the answers regarding the adjusted allocation, expected returns, historical performance, and potential management risks:
+
+### 1. Expected Annualized Return Rate
+According to the asset allocation plan model (`AAP000117`), the expected annualized return rate is **6.0%** (with an expected maximum drawdown of **8.0%**). 
+*(Note: Based on the backtest results of the specific fund portfolio over the 5-year rolling window from 2020-08-17 to 2025-08-18, the actual historical annualized return achieved was **6.04%**, and the maximum drawdown was **10.64%**).*
+
+---
+
+### 2. Historical Performance of the Fund Products
+Based on the backtest details for the portfolio (rolling window: 5 years, from 2020-08-17 to 2025-08-18):
+* **Annualized Return:** 6.04% (`0.0604214053`)
+* **Maximum Drawdown:** -10.64% (`-0.1063799766`), which occurred between 2021-07-22 and 2022-04-26.
+* **Volatility:** 7.1% (`0.071`)
+* **Sharpe Ratio:** 0.4625 (`0.4625`)
+
+---
+
+### 3. Potential Management Risks to Note
+When investing in these fund products, you should pay attention to the following risk dimensions inherent in the portfolio's structure:
+* **Market Risk / Volatility:** Although the portfolio is heavily weighted toward bonds (Chinese Bonds make up the largest portion at ~46.1%), it still includes allocations to Chinese Stocks (~30.6%), Overseas Stocks (~13.5%), Overseas Bonds (~4.0%), and Alternative Commodities/Gold (~5.8%). Market fluctuations in equities, interest rates, and commodity prices will impact the short-term net value.
+* **Drawdown Risk:** Historical backtesting indicates that the portfolio can experience drawdowns (such as the 10.64% maximum drawdown recorded during the 2021–2022 market period). 
+* **Underlying Fund/Management Costs & Operations:** The portfolio comprises multiple individual funds managed by various fund houses (e.g., E Fund, Bosera, Fullgoal, HFT, etc.). Each product carries its own explicit costs (management fees, custodian fees, and potential sales service fees for C-share classes) and implicit trading/operation costs which affect net returns over time.

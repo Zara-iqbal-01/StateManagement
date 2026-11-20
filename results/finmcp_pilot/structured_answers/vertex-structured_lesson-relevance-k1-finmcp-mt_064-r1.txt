@@ -1,0 +1,6 @@
+Based on the data provided in the current supplied data:
+
+* **Annualized Return Calculation:** The backtest data shows an annualized return of approximately **13.32%** (specifically $0.1331607433$ or $13.31607433\%$) calculated over the rolling window (`Y5`) from `2020-08-17` to `2025-08-18` based on proxy index market data. 
+* **Max Drawdown:** The max drawdown is **-15.50%** (specifically $-0.1550378527$ or $-15.50378527\%$), which occurred over the range from `2024-04-19` to `2025-04-08`. 
+
+*(Note: The current supplied data does not contain a specific formula definition for these metrics or your account's cash inflow and outflow records.)*

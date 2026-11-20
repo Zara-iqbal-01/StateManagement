@@ -1,0 +1,5 @@
+Based on the current supplied data, the Huahaoyueyuan strategy (strategy code: `ZH099893`, managed by Yingmi Fund Research Institute) is classified as **Low risk**. It only holds pure bond and monetary funds, maintaining a neutral allocation center of 50% pure bonds and 50% monetary funds, with actual allocations dynamically adjusted between 0–100% based on market conditions. 
+
+However, the current supplied data **does not contain a step-by-step buying process or guide** on how to purchase these products. 
+
+Therefore, I cannot provide a detailed, step-by-step tutorial on how to buy the products at this moment based solely on the available data. If you have any further questions regarding the strategy's performance, risk control, or asset allocation details from the supplied information, please let me know!

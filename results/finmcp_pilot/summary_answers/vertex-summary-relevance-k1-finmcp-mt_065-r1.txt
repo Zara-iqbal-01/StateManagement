@@ -1,0 +1,9 @@
+Based on the current supplied data, the verification has been completed, and your asset allocation analysis report has been generated. Below is the distribution across major asset classes:
+
+* **Chinese Stocks**: 62.5% (Ratio: 0.625, Category Code: 3001010301)
+* **Overseas Stocks**: 37.5% (Ratio: 0.375, Category Code: 3001010302)
+
+You can view the detailed chart for your asset distribution here:
+[View Asset Chart](https://jianda-cmsstatic.oss-cn-shenzhen.aliyuncs.com/assets/charts/20258/1755594694413_82rc4v5qlbs.png)
+
+*(Note: The current supplied data includes details for major asset classes based on your funds, but does not provide further breakdown for all primary and secondary categories beyond what is listed above.)*

@@ -1,0 +1,8 @@
+Based on the supplied data for the fund "Yingmi Money Fund A" (fund code: 004369) with a transaction time of June 3, 2024:
+
+- **Transaction time flow for wallet buy:**
+  - **Before 15:00 on 06-03:** Buy (initiated transaction)
+  - **06-04 (Tuesday):** Confirm shares
+  - **06-05 (Wednesday):** View profit and loss
+
+Therefore, if the 100 RMB was put in on June 3rd, shares are expected to be confirmed on June 4, 2024, and profit and loss (returns) can be viewed starting on June 5, 2024.

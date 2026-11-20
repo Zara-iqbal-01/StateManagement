@@ -1,0 +1,8 @@
+Based on the data supplied, I can explain the metrics *annualized return* and *max drawdown* generally, but the supplied data does not contain specific calculation formulas for how the 13.32% annualized return (specifically 13.31607433% based on the backtest detail from the rolling window Y5 from 2020-08-17 to 2025-08-18) was derived, nor does it provide personal account cash inflow/outflow records. 
+
+Here is what the metrics represent according to standard financial definitions:
+
+* **Annualized Return:** This measures the geometric average amount of money earned by an investment each year over a given time period (in this backtest, represented by a 5-year rolling window from August 17, 2020, to August 18, 2025, with a value of approximately 13.32% or 0.1331607433).
+* **Max Drawdown (Maximum Drawdown):** This represents the maximum observed loss from a peak to a trough of a portfolio before a new peak is attained, indicating the downside risk over a given time period. In your backtest detail, the max drawdown is -0.1550378527 (-15.50%), with a drawdown range from 2024-04-19 to 2025-04-08.
+
+Please note that the supplied data does not contain your specific account's cash inflow and outflow records or personal monthly account details for account ID 123456789.

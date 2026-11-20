@@ -1,0 +1,8 @@
+Based on the trade rules for the "Steady Happiness" investment product (fund code `005813`) for a redemption application submitted on September 27th (which falls under the trade time flow for before 15:00 on 09-29):
+
+- **Amount Confirmation:** Expected on **09-30 (Tuesday)**
+- **Arrival Time:** 
+  - If redeeming to Yingmi Bao, the fastest expected arrival is **10-14 (Tuesday)**.
+  - If redeeming to a bank card, the fastest expected arrival is **10-16 (Thursday)**.
+
+The remaining balance not having arrived yet is due to the standard processing and settlement cycle of the fund redemption. The actual arrival time depends on when the fund company issues the redemption funds and your chosen destination (Yingmi Bao vs. bank card).

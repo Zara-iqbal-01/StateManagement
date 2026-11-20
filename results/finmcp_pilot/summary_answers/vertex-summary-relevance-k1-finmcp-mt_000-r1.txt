@@ -1,0 +1,7 @@
+Based on the trade rules for fund code 004369 ("Yingmi Money Fund A") with a transaction time on June 3, 2024:
+
+- **Transaction time:** Before 15:00 on June 3, 2024.
+- **Share confirmation:** Expected on June 4, 2024 (Tuesday).
+- **View profit and loss:** Expected on June 5, 2024 (Wednesday).
+
+According to these rules, since your transaction was initiated on June 3, the shares are confirmed on June 4, and you will be able to view the profit and loss (returns) starting on June 5, 2024. This explains why no movement or returns were visible yet prior to June 5.
