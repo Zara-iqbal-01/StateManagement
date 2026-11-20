@@ -17,7 +17,7 @@ from state_management.models import MemoryMode, SelectionStrategy, TaskCase
 from state_management.representations import structured_lesson
 from state_management.retrieval import retrieve
 from state_management.store import MemoryStore
-from run_vertex_no_memory_baseline import adc_access_token, call_vertex
+from run_vertex_no_memory_baseline import adc_access_token, call_vertex, _rl_urlopen
 
 
 TASK_SYSTEM_PROMPT = """You are evaluating a financial-data assistant in a controlled benchmark.
@@ -38,8 +38,8 @@ def call_with_system(*, token: str, project: str, location: str, model: str, pro
     from urllib.request import Request, urlopen
 
     url = (
-        f"https://aiplatform.googleapis.com/v1/projects/{project}/locations/{location}"
-        f"/publishers/google/models/{model}:generateContent"
+        (f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent" if os.environ.get("USE_GEMINI_API") else f"https://aiplatform.googleapis.com/v1/projects/{project}/locations/{location}"
+        f"/publishers/google/models/{model}:generateContent")
     )
     body = {
         "systemInstruction": {"parts": [{"text": system_prompt}]},
@@ -48,11 +48,11 @@ def call_with_system(*, token: str, project: str, location: str, model: str, pro
     request = Request(
         url,
         data=json.dumps(body).encode("utf-8"),
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        headers={**({"x-goog-api-key": token} if os.environ.get("USE_GEMINI_API") else {"Authorization": f"Bearer {token}"}), "Content-Type": "application/json"},
         method="POST",
     )
     try:
-        with urlopen(request, timeout=90) as response:
+        with _rl_urlopen(request, timeout=90) as response:
             payload = json.loads(response.read().decode("utf-8"))
     except HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")
@@ -109,7 +109,7 @@ def main() -> None:
 
             retrieval_started = time.perf_counter()
             retrieved = []
-            if task["turn"] in (2, 3):
+            if task["turn"] >= 2:
                 retrieved = retrieve(
                     store.list(MemoryMode.STRUCTURED_LESSON),
                     task["question"],

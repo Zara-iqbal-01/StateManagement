@@ -18,6 +18,22 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
+def _rl_urlopen(request, timeout=90):
+    """Free-tier helper: space out calls and retry on rate-limit / overload errors."""
+    delay = float(os.environ.get("CALL_DELAY", "4.5" if os.environ.get("USE_GEMINI_API") else "0"))
+    for attempt in range(8):
+        if delay:
+            time.sleep(delay)
+        try:
+            return urlopen(request, timeout=timeout)
+        except HTTPError as e:
+            if os.environ.get("USE_GEMINI_API") and e.code in (429, 500, 503, 504) and attempt < 7:
+                print(f"   HTTP {e.code}, waiting 60s then retrying ({attempt + 1}/7)...")
+                time.sleep(60)
+                continue
+            raise
+
+
 def gcloud_command() -> str:
     """Find the CLI without depending on the original author's home directory."""
     configured = os.environ.get("GCLOUD_PATH")
@@ -41,6 +57,8 @@ If the question is under-specified or cannot be answered from the supplied data,
 
 
 def adc_access_token() -> str:
+    if os.environ.get("USE_GEMINI_API"):
+        return os.environ["GEMINI_API_KEY"]
     result = subprocess.run(
         [gcloud_command(), "auth", "application-default", "print-access-token"],
         text=True,
@@ -67,8 +85,8 @@ def extract_text(payload: dict) -> str:
 
 def call_vertex(*, token: str, project: str, location: str, model: str, prompt: str) -> tuple[str, dict]:
     url = (
-        f"https://aiplatform.googleapis.com/v1/projects/{project}/locations/{location}"
-        f"/publishers/google/models/{model}:generateContent"
+        (f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent" if os.environ.get("USE_GEMINI_API") else f"https://aiplatform.googleapis.com/v1/projects/{project}/locations/{location}"
+        f"/publishers/google/models/{model}:generateContent")
     )
     body = {
         "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
@@ -77,11 +95,11 @@ def call_vertex(*, token: str, project: str, location: str, model: str, prompt: 
     request = Request(
         url,
         data=json.dumps(body).encode("utf-8"),
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        headers={**({"x-goog-api-key": token} if os.environ.get("USE_GEMINI_API") else {"Authorization": f"Bearer {token}"}), "Content-Type": "application/json"},
         method="POST",
     )
     try:
-        with urlopen(request, timeout=90) as response:
+        with _rl_urlopen(request, timeout=90) as response:
             payload = json.loads(response.read().decode("utf-8"))
     except HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")

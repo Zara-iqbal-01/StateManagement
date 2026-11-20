@@ -69,6 +69,7 @@ def main() -> None:
             f"Question asked:\n{task['question']}\n\n"
             f"Intended reading:\n{task['intended_reading']}\n\n"
             f"What the supplied figures actually measure:\n{task['figure_meaning']}\n\n"
+            f"{('Reference (gold) answer from the benchmark:' + chr(10) + task['expected_answer'] + chr(10) + chr(10)) if task.get('expected_answer') else ''}"
             f"Current answer:\n{answer}\n"
             f"Current task has retrieval: {bool(record.get('retrieved_memory_ids'))}.\n"
             f"This is a stale-data episode: {task['episode'] == 'stale_data'}."
@@ -82,7 +83,7 @@ def main() -> None:
         label = {
             "run_id": record["run_id"], "condition": record["condition"], "task_id": record["task_id"],
             "episode": task["episode"], "turn": task["turn"], "judge_model": model,
-            "completed": judgement["completed"], "repeated_error": judgement["repeated_error"] if task["turn"] in (2, 3) else False,
+            "completed": judgement["completed"], "repeated_error": judgement["repeated_error"] if task["turn"] >= 2 else False,
             "stale_memory_error": judgement["stale_memory_error"] if task["episode"] == "stale_data" else False,
             "reason": judgement["reason"], "judge_total_tokens": usage.get("totalTokenCount"),
         }

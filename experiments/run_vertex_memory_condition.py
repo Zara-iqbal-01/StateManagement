@@ -65,7 +65,7 @@ def main() -> None:
                 continue
             retrieval_started = time.perf_counter()
             retrieved = []
-            if task["turn"] in (2, 3):
+            if task["turn"] >= 2:
                 retrieved = retrieve(store.list(mode), task["question"], top_k=1, strategy=SelectionStrategy.RELEVANCE)
             retrieval_overhead_ms = round((time.perf_counter() - retrieval_started) * 1000, 3)
             past_context = f"\n\nRetrieved past experience:\n{retrieved[0].memory.content}" if retrieved else ""
