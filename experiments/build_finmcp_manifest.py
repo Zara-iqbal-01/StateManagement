@@ -71,7 +71,9 @@ def main() -> None:
     for k, scen, recs in episodes:
         ep_name = f"{scen}-{k + 1:02d}"
         for turn, r in enumerate(recs, start=1):
-            question = "\n\n".join(f"User (turn {t + 1}): {u}" for t, u in enumerate(r["user_turns"]))
+            turns = [u.replace("###STOP###", "").strip() for u in r["user_turns"]]
+            turns = [u for u in turns if u]
+            question = "\n\n".join(f"User (turn {t + 1}): {u}" for t, u in enumerate(turns))
             manifest.append({
                 "task_id": f"finmcp-{r['id']}",
                 "source_row": r["id"],
